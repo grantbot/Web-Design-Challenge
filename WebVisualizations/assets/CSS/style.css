@@ -1,0 +1,53 @@
+/* placeholder for my css file */
+/* position */
+
+/* text */
+/* visual */
+.navbar {
+    margin: 10px 10px 10px 10px;
+    /* box model */
+    padding: 10px 10px 10px 10px;
+    border: 2px solid cornflowerblue;
+
+}
+
+main {
+    margin: 10px 10px 10px 10px;
+    /* box model */
+    padding: 10px 10px 10px 10px;
+    border: 2px solid cornflowerblue;
+
+}
+
+/* Selecting elements by ID */
+#main-bio,
+#bio-image 
+{
+  float: left;
+}
+
+#figure {
+    position: relative;
+    height: 10px;
+  }
+
+.left_box, 
+.right_box {
+    /* positioning */
+    height: 500px;
+    margin: 10px 10px 10px 10px;
+    /* box model */
+    padding: 10px 10px 10px 10px;
+    border: 2px solid cornflowerblue;
+
+
+}
+
+footer {
+    margin: 10px 10px 10px 10px;
+    /* box model */
+    padding: 10px 10px 10px 10px;
+    border: 2px solid cornflowerblue;
+}
+
+
