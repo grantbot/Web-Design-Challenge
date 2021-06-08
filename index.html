@@ -16,88 +16,129 @@
 </head>
 
 <body>
-
-
-  <!-- start of nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Latitude</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- end of nav bar -->
-  <main>
-
+  <header>
     <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <div class="container left_box">
-            <h1>Summary: Temperature vs. X</h1>
-            <section id="main-bio">
-              <section id="figure">
-                <h2 id="bio-name">Your Name</h2>
-                <img id="bio-image" src="assets/images/Temperature.png" alt="Max Temperature">
-              </section>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum risus ut justo laoreet
-                consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Nunc dui neque, malesuada egestas aliquet ac, commodo in magna. Etiam mollis odio at mi maximus
-                hendrerit. Integer aliquam id lectus nec hendrerit. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Mauris rhoncus eget nulla in ornare. Maecenas massa nibh,
-                commodo non condimentum eu, congue tempus neque. Donec neque mi, ullamcorper eget fringilla et, iaculis
-                vitae tortor. Curabitur vel nunc vel mi lobortis ornare ut non nulla. Etiam ornare libero ac suscipit
-                aliquam. Nunc venenatis felis sit amet velit vehicula interdum. Vivamus iaculis condimentum nulla vitae
-                dapibus.</p>
-            </section>
+      <!-- start of nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><span id="navbar-span">Latitude</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="visualizations/humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+
+
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4">
+    </div>
+    </nav>
+  </header>
+  <!-- end of nav bar -->
+
+  <!-- <main class="project-container"></main> -->
+  <main>
+    <div class="container main-body-container">
+
+      <div class="row">
+        <div class="col-5">
+          <div class="container left_box">
+            <h1>Summary: Latitude vs. X</h1>
+
+            <img id="figure" src="assets/images/Temperature.png" alt="Max Temperature">
+
+
+            <p class="project-description">The purpose of this project was to analyze how weather changes as
+              you get closer to the equator. to accomplish this analysis, we first pulled data from the
+              OpenWeathermap API
+              to assemble a dataset on over 500 cities.
+            </p>
+
+            <br>
+
+            <p class="project-description">After assembling the dataset, we used Matplotlib to plot various
+              aspects of the weather vs. latitude.
+              Factors we examined included: temperature, cloudiness, wind speed, and humidity.
+              This site provides the source data and visualizations created as part of the analysis, as well
+              as explanations and descriptions of an trends and corrections witnessed.</p>
+          </div>
+        </div>
+
+
+        <div class="col-7">
           <div class="container right_box">
-            <h1>Visualizations</h1>
+            <h2>Visualizations</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card">
+                  <a href="visualizations/temp.html">
+                    <img src="assets/images/Temperature.png" class="card-img-top" alt="temp">
+                    <div class="card-body">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="visualizations/cloudiness.html">
+                    <img src="assets/images/Cloudiness.png" class="card-img-top" alt="cloudiness">
+                    <div class="card-body">
+
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="visualizations/wind_speed.html">
+                    <img src="assets/images/Wind_Speed.png" class="card-img-top" alt="wind_speed">
+                    <div class="card-body">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="visualizations/humidity.html">
+                    <img src="assets/images/Humidity.png" class="card-img-top" alt="humidity">
+                    <div class="card-body">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-
-
-
-
-
+    </div>
   </main>
 
   <footer>
-
-    <h1>something</h1>
-
+    <div class="container">
+      <h4>footer</h4>
+    </div>
 
   </footer>
   <!-- Option 2: Separate Popper and Bootstrap JS -->

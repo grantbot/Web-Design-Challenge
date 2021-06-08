@@ -1,53 +1,122 @@
-/* placeholder for my css file */
-/* position */
+/* my css file */
 
+/* position */
+/* box model */
 /* text */
 /* visual */
+
+body {
+position: relative;
+background-image: url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80');
+background-color: #cccccc;
+}
+
+.container-fluid {
+background-color: rgb(126, 114, 114);
+text-emphasis-color: black;
+}
+
+.container {
+border: 2px solid blue;
+background-color: teal;
+}
+
+.navbar-brand {
+background-color: rgb(53, 175, 134);
+
+margin: 10px 800px 10px 10px;
+height: 40px;
+width: 120px;
+text-align: center;
+}
+
+#navbar-span {
+color: white;
+font-weight: bold;
+
+}
+
+.main-body-container {
+margin-top: 10px;
+margin-bottom: 1opx;
+height: 850px;
+width: 1220px;
+border: 2px solid green;
+padding: 10px 10px 10px 10px;
+align-self: center;
+background-color: grey;
+}
+
+.comp_main-body-container {
+    margin-top: 10px;
+    margin-bottom: 1opx;
+    height: 965px;
+    width: 1220px;
+    border: 2px solid green;
+    padding: 10px 10px 10px 10px;
+    align-self: center;
+    background-color: grey;
+    }
+
 .navbar {
+margin: 10px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
+}
+
+.left_box, 
+.right_box {
+height: 650px;
+margin: 10px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
+border: 2px solid cornflowerblue;
+}
+
+.left_box {
+height: 700px;
+}
+
+.right_box {
+width: 650px;
+}
+
+.hum_left_box {
+    height: 650px;
     margin: 10px 10px 10px 10px;
-    /* box model */
     padding: 10px 10px 10px 10px;
     border: 2px solid cornflowerblue;
 
 }
 
-main {
-    margin: 10px 10px 10px 10px;
-    /* box model */
-    padding: 10px 10px 10px 10px;
-    border: 2px solid cornflowerblue;
+.hum_right_box {
+    height: 800px;
+
+
+}
+
+.comp_left_box,
+.comp_right_box {
+    height: 550;
+}
+
+
+.project-description {
+position: relative;
+font-size: 15pt;
+}
+
+footer {
+margin: 10;
+padding: 10px 10px 10px 10px;
+}
+
+.comp_card {
+height: relative;
 
 }
 
 /* Selecting elements by ID */
-#main-bio,
-#bio-image 
-{
-  float: left;
-}
-
 #figure {
-    position: relative;
-    height: 10px;
-  }
-
-.left_box, 
-.right_box {
-    /* positioning */
-    height: 500px;
-    margin: 10px 10px 10px 10px;
-    /* box model */
-    padding: 10px 10px 10px 10px;
-    border: 2px solid cornflowerblue;
-
-
+float: left;
+height: 200px;
 }
-
-footer {
-    margin: 10px 10px 10px 10px;
-    /* box model */
-    padding: 10px 10px 10px 10px;
-    border: 2px solid cornflowerblue;
-}
-
 
